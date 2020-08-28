@@ -24,7 +24,7 @@ const Styles = styled.div`
 export const NavBar = () => {
   return (
     <Styles>
-      <Navbar expand="md">
+      <Navbar expand="lg">
         <Navbar.Brand href="#home">Duru's Wonderland</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" />

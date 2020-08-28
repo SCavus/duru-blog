@@ -6,7 +6,7 @@ export const Art = () => {
   const [arts, setArts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/art").then((res) => setArts(res.data));
+    axios.get("http://localhost:5001/api/art").then((res) => setArts(res.data));
   }, []);
 
   return (

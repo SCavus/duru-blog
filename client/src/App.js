@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <NavBar />
-      {/* <Jumbotron /> */}
+      <Jumbotron />
       <Layout>
         <Router>
           <Switch>

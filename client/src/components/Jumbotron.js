@@ -5,7 +5,7 @@ import boat from '../assets/boat.jpg';
 
 const Styles = styled.div`
   .jumbo {
-    background: url(${boat}) no-repat fix bottom;
+    background: url(${boat}) no-repeat fix bottom;
     background-size: cover;
     color: #ccc;
     height: 200px;
