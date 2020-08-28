@@ -13,13 +13,13 @@ function App() {
   return (
     <>
       <NavBar />
-      <Jumbotron />
+      {/* <Jumbotron /> */}
       <Layout>
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/art" component={Art} />
-            {/* <Route path="/books" component={Books} /> */}
+            <Route path="/books" component={Books} />
             <Route path="/about" component={About} />
             <Route component={ErrorPage} />
           </Switch>
