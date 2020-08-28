@@ -7,6 +7,7 @@ require("dotenv/config");
 const uri = process.env.DATABASE_URI;
 
 const app = express();
+app.use(cors())
 
 mongoose.Promise = global.Promise;
 mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true });
@@ -17,7 +18,7 @@ const artRoute = require("./routes/art");
 const bookRoute = require("./routes/books");
 
 app.use("/api/art", artRoute);
-app.use("/api/reviews", bookRoute);
+app.use("/api/books", bookRoute);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));

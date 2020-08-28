@@ -1,18 +1,18 @@
 const express = require('express');
 const router = express.Router();
-const Reviews = require('../models/bookReviews');
+const Books = require('../models/books');
 
 router.get('/', async (req, res) => {
   try {
-    const reviews = await Reviews.find();
-    res.json(reviews);
+    const books = await Books.find();
+    res.json(books);
   } catch (err) {
     res.json({message: err});
   }
 });
 
 router.post('/post', (req, res) => {
-  const post = new Reviews({
+  const post = new Books({
     title: req.body.title,
     url: req.body.url,
     review: req.body.review,
