@@ -46,6 +46,9 @@ export const NavBar = () => {
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
           <Button variant="outline-light">Search</Button>
         </Form>
+        <Nav className="ml-auto">
+          <Nav.Link id="nav-link" href="">Login</Nav.Link>
+        </Nav>
       </Navbar>
     </Styles>
   );
