@@ -1,6 +1,8 @@
 import React from "react";
 import "./card.css";
 import gizem from "../../assets/drawings/gizem.jpg";
+import { Card, Button } from "react-bootstrap";
+
 
 export const BookCard = ({ book }) => {
   return (
