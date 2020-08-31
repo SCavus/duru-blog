@@ -11,9 +11,9 @@ export const Art = () => {
 
   return (
     <div className="container-fluid d-flex justify-content-center">
-      <div className="row">
+      <div class="card-columns">
         {arts.map((art, index) => (
-          <div className="col-xl-4" key={index}>
+          <div key={index} class="card bg-primary">
             <ArtCard art={art} />
           </div>
         ))}

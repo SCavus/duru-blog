@@ -1,6 +1,7 @@
 import React from "react";
+import "./Footer.css";
 
-import { Container, Row, Col, Dropdown } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -16,52 +17,12 @@ export const Footer = () => {
       <footer className="footer d-flex ">
         <Container>
           <Row>
-            <Col lg={6} sm={12} className="footer-links">
-              <ul className="d-flex ">
-                <li>
-                  <div className="div-links">
-                    <a
-                      href="https://www.compasscollect.com/about-compass"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="What we do"
-                    >
-                      WHAT WE DO
-                    </a>
-                    <a
-                      href="https://www.compasscollect.com/contact"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="Contact us"
-                    >
-                      CONTACT US
-                    </a>
-                  </div>
-                </li>
-
-                <li>
-                  <div className="div-links">
-                    <a
-                      href="https://www.compasscollect.com/news"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="News"
-                    >
-                      NEWS
-                    </a>
-                  </div>
-                </li>
-                </ul>
-            </Col>
-            <Col lg={3} sm={12} className="social">
+            <Col lg={3} sm={12} className="footer-links"></Col>
+            <Col lg={6} sm={12} className="social">
               <div>
-                <ul>
+                <ul className="d-flex justify-content-row">
                   <li>
-                    <a
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <a href="" target="_blank" rel="noopener noreferrer">
                       <FontAwesomeIcon
                         icon={faFacebook}
                         color="blue"
@@ -115,7 +76,7 @@ export const Footer = () => {
                 </ul>
               </div>
             </Col>
-            <Col col={3} className="survey-btn">
+            <Col col={3} className="btn btn-primary">
               <div>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfF8jKCoLqanEIJkZjksnDmZpniMiH4Z5ImMA0gtHgEqLhCzA/viewform"
@@ -123,7 +84,7 @@ export const Footer = () => {
                   rel="noopener noreferrer"
                   title="Survey"
                 >
-                  SURVEY
+                  A LINK
                 </a>
               </div>
             </Col>

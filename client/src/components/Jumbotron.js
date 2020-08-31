@@ -1,11 +1,11 @@
-import React from 'react';
-import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
-import styled from 'styled-components';
-import boat from '../assets/boat.jpg';
+import React from "react";
+import { Jumbotron as Jumbo, Container } from "react-bootstrap";
+import styled from "styled-components";
+import boat from "../assets/boat.jpg";
 
 const Styles = styled.div`
   .jumbo {
-    background: url(${boat}) no-repeat fix bottom;
+    background-image: url(${boat}) no-repeat fix bottom;
     background-size: cover;
     color: #ccc;
     height: 200px;
@@ -15,7 +15,7 @@ const Styles = styled.div`
 
   .overlay {
     background-color: #bdbeec;
-    opacity: 0.5;
+    opacity: 0.8;
     position: absolute;
     top: 0;
     right: 0;

@@ -12,11 +12,13 @@ body {
 }
 
 .card-body {
+  background: radial-gradient(#e5e5e5, #fff, #e5e5e5);
   padding: 3rem 0 !important;
+
 }
 
 .card-title {
-  height: 2em;
+  height: 2rem;
 }
 
 .card-text {
@@ -29,22 +31,18 @@ body {
   padding-top: 6rem;
 }
 
-.scrollable {
-  overflow-y: auto;
-  max-height: 300px;
-}
-
 .overflow {
   overflow: hidden;
 }
+
 .card-img-top {
   width: 100%;
-  height: 15vw;
+  height: 400px;
   object-fit: cover;
   transform: scale(1);
-  transition: transform 0.5s ease;
+  transition: transform 0.7s ease;
 }
 
 .card-img-top:hover {
-  transform: scale(1.8);
+  transform: scale(1.3);
 }

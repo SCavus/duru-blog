@@ -1,17 +1,16 @@
 import React from "react";
 import "./card.css";
+import gizem from "../../assets/drawings/gizem.jpg";
 
 export const BookCard = ({ book }) => {
-  console.log(book);
   return (
-    <div className="card text-left shadow">
-      <div className="overflow">
-        <img src={book.url} alt="book_cover" className="card-image-top" />
-      </div>
-      <div className="card-body text-dark">
-        <h4 className="card title">{book.title}</h4>
-        <p className="card-text text-secondary">{book.review}</p>
-      </div>
-    </div>
+    <Card style={{ width: "22rem" }}>
+      <Card.Img variant="top" className="overflow" src={gizem} />
+      <Card.Body>
+        <Card.Title>{book.title}</Card.Title>
+        <Card.Text>{book.review}</Card.Text>
+        <Button variant="primary">See full page</Button>
+      </Card.Body>
+    </Card>
   );
 };

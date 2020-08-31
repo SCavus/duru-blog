@@ -8,6 +8,7 @@ import { ErrorPage } from './components/ErrorPage';
 import { Layout } from './components/Layout';
 import { NavBar } from './components/NavBar';
 import { Jumbotron } from './components/Jumbotron';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           </Switch>
         </Router>
       </Layout>
+      <Footer />
     </>
   );
 }
