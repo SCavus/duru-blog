@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { ArtCard } from "./Cards/ArtCard";
+// import { } from "react-bootstrap";
 
 export const Art = () => {
   const [arts, setArts] = useState([]);
@@ -10,14 +11,24 @@ export const Art = () => {
   }, []);
 
   return (
-    <div className="container-fluid d-flex justify-content-center">
-      <div class="card-columns">
-        {arts.map((art, index) => (
-          <div key={index} class="card bg-primary">
-            <ArtCard art={art} />
-          </div>
-        ))}
-      </div>
+    <div className="row">
+      {arts.map((art, index) => (
+        <ArtCard key={index} art={art} className="col-md-4" />
+      ))}
     </div>
   );
 };
+
+// -fluid d-flex justify-content-center
+// return (
+//   <div className="container">
+//     <div className="row">
+//       <CardDeck>
+//         {arts.map((art, index) => (
+//           <ArtCard key={index} art={art} className="col-sm-4" />
+//         ))}
+//       </CardDeck>
+//     </div>
+//   </div>
+// );
+// };

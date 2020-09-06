@@ -1,11 +1,12 @@
 import React from "react";
 import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 import styled from "styled-components";
-import boat from "../assets/boat.jpg";
+// import boat from "../../src/boat.jpg";
 
 const Styles = styled.div`
   .jumbo {
-    background-image: url(${boat}) no-repeat fix bottom;
+    background-image: url("/src/boat.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     color: #ccc;
     height: 200px;
@@ -14,26 +15,20 @@ const Styles = styled.div`
   }
 
   .overlay {
-    background-color: #bdbeec;
-    opacity: 0.8;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -80%);
   }
 `;
 
 export const Jumbotron = () => (
   <Styles>
-    <Jumbo clasName="jumbo">
-      <div className="overlay">
-        <Container>
-          <h2>Welcome</h2>
-          <p>Join me in my journey</p>
-        </Container>
-      </div>
+    <Jumbo className="jumbo">
+      <Container className="overlay">
+        <h2>Welcome</h2>
+        <p>Join me in my journey</p>
+      </Container>
     </Jumbo>
   </Styles>
 );

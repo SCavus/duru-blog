@@ -47,7 +47,7 @@ export const NavBar = () => {
           <Button variant="outline-light">Search</Button>
         </Form>
         <Nav className="ml-auto">
-          <Nav.Link id="nav-link" href="">Login</Nav.Link>
+          <Nav.Link id="nav-link" href="/login">Login</Nav.Link>
         </Nav>
       </Navbar>
     </Styles>

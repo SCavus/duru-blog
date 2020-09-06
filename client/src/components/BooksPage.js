@@ -15,7 +15,7 @@ export const Books = () => {
     <div className="container-fluid d-flex justify-content-center">
       <div className="card-columns">
         {books.map((book, index) => (
-          <div class="card bg-primary" key={index}>
+          <div className="card bg-primary" key={index}>
             <BookCard book={book} />
           </div>
         ))}

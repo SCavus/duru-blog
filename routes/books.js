@@ -11,6 +11,18 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get("/:id", async (req, res) => {
+  const artId = req.params.id;
+  try {
+    const singleBook = await Books.findById(artId);
+    res.json(singleBook);
+  } catch (err) {
+    res.json({
+      message: err,
+    });
+  }
+});
+
 router.post('/post', (req, res) => {
   const post = new Books({
     title: req.body.title,

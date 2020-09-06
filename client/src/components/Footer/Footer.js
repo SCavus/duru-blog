@@ -20,8 +20,8 @@ export const Footer = () => {
             <Col lg={3} sm={12} className="footer-links"></Col>
             <Col lg={6} sm={12} className="social">
               <div>
-                <ul className="d-flex justify-content-row">
-                  <li>
+                <ul className="d-flex justify-content-row space-around">
+                  <li className="ml-5">
                     <a href="" target="_blank" rel="noopener noreferrer">
                       <FontAwesomeIcon
                         icon={faFacebook}
@@ -31,7 +31,7 @@ export const Footer = () => {
                       />
                     </a>
                   </li>
-                  <li>
+                  <li className="ml-5">
                     <a
                       href="https://www.instagram.com/cemilabbey/"
                       target="_blank"
@@ -45,7 +45,7 @@ export const Footer = () => {
                       />
                     </a>
                   </li>
-                  <li>
+                  <li className="ml-5">
                     <a
                       href="https://twitter.com/fsDevDragonfly"
                       target="_blank"
@@ -59,7 +59,7 @@ export const Footer = () => {
                       />
                     </a>
                   </li>
-                  <li>
+                  <li className="ml-5">
                     <a
                       href="https://www.youtube.com/channel/UCgz0GCgczYA0u7fTAepi2dg"
                       target="_blank"
@@ -76,17 +76,7 @@ export const Footer = () => {
                 </ul>
               </div>
             </Col>
-            <Col col={3} className="btn btn-primary">
-              <div>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfF8jKCoLqanEIJkZjksnDmZpniMiH4Z5ImMA0gtHgEqLhCzA/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Survey"
-                >
-                  A LINK
-                </a>
-              </div>
+            <Col col={3} >
             </Col>
           </Row>
         </Container>
