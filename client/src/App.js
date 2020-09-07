@@ -10,6 +10,8 @@ import { Layout } from "./components/Layout";
 import { NavBar } from "./components/NavBar";
 import { Jumbotron } from "./components/Jumbotron";
 import { Footer } from "./components/Footer/Footer";
+import { SingleArt } from "./components/SinglePage/SingleArt";
+import { SingleBook } from "./components/SinglePage/SingleBook";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
             <Route path="/books" component={Books} />
             <Route path="/about" component={About} />
             <Route path="/login" component={Login} />
+            <Route path="/art/artId" component={SingleArt} />
+            <Route path="/books/bookId" component={SingleBook} />
             <Route component={ErrorPage} />
           </Switch>
         </Router>
@@ -32,5 +36,6 @@ function App() {
     </>
   );
 }
+{/* <Route path="/art/:artid" component={SingleArt} /> */}
 
 export default App;

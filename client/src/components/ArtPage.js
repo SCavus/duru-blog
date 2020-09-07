@@ -18,17 +18,3 @@ export const Art = () => {
     </div>
   );
 };
-
-// -fluid d-flex justify-content-center
-// return (
-//   <div className="container">
-//     <div className="row">
-//       <CardDeck>
-//         {arts.map((art, index) => (
-//           <ArtCard key={index} art={art} className="col-sm-4" />
-//         ))}
-//       </CardDeck>
-//     </div>
-//   </div>
-// );
-// };

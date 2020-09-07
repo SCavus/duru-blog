@@ -12,9 +12,9 @@ router.get('/', async (req, res) => {
 });
 
 router.get("/:id", async (req, res) => {
-  const artId = req.params.id;
+  const bookId = req.params.id;
   try {
-    const singleBook = await Books.findById(artId);
+    const singleBook = await Books.findById(bookId);
     res.json(singleBook);
   } catch (err) {
     res.json({

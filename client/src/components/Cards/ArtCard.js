@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { Button } from "react-bootstrap";
-import axios from "axios";
+import React from "react";
+import { Button} from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 import "./card.css";
 import lilac from "./../../assets/drawings/lilac.jpg";
-import { SingleArt } from "../SinglePage/SingleArt";
 
 export const ArtCard = ({ art }) => {
+  const artId = art._id;
+
   return (
     <div className="art-card">
       <div>
@@ -17,16 +19,15 @@ export const ArtCard = ({ art }) => {
       <div className="card-text">
         <p>{art.text}</p>
       </div>
-      <Button onclick={() => setArt()} art={art}>
-        See full
+      <Button >
+        <Link to={{ pathname: `/art/${artId}` }} />
       </Button>
     </div>
   );
 };
 
-
-<Router>
-  <Switch>
-    <Route path="/art/:artid" component={SingleArt} />
-  </Switch>
-</Router>
+// <Router>
+//   <Switch>
+//     <Route path="/art/:artid" component={SingleArt} />
+//   </Switch>
+// </Router>
